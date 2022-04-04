@@ -1,0 +1,23 @@
+.address__list {
+  @extend %list;
+
+  font-style: normal;
+}
+
+.address__item{
+  &:not(:last-child){
+    margin-bottom: 9px;
+  }
+}
+
+.address__place{
+  @extend %link;
+  
+  color: $second-txt-color;
+}
+
+.address__contact{
+  @extend %link;
+  // color: $second-txt-color;
+  color: rgba($second-txt-color, 0.6);
+}

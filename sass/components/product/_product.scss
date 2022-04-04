@@ -1,0 +1,25 @@
+@import './filter';
+@import './card';
+
+.product {
+  margin-top: 80px;
+}
+
+.product__list{
+  @extend %list;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__item {
+  /* width: calc((100% - 60px) / 3 ); */
+  width: 370px;
+
+  border-radius: 4px;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}

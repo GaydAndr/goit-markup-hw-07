@@ -1,0 +1,42 @@
+@import '../logo';
+@import './address';
+@import './subscribe';
+
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__contact {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer__social{
+  margin-right: 70px;
+}
+
+.footer__txt {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $second-txt-color;
+  text-transform: uppercase;
+}
+
+.footer__form {
+  flex-grow: 1;
+}

@@ -1,0 +1,63 @@
+.card {
+  @extend %link;
+
+  display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card__img-txt{
+  position: relative;
+  overflow: hidden;
+}
+
+.card__txt {
+  position: absolute;
+  top: 0;
+  padding: 64px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $second-txt-color;
+  background-color: $card-img-bg;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .card:hover &,
+  .card:focus & {
+    transform: translateY(0);
+  }
+}
+
+.card__title{
+  padding: 20px 24px;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.card__name{
+  margin-bottom: 4px;
+  
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $titlte-color;
+}
+
+.card__description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $main-txt-color;
+}

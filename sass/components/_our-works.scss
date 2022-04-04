@@ -1,0 +1,33 @@
+.our-works__list {
+  @extend %list;
+
+  display: flex;
+}
+
+.our-works__item {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+.our-works__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $second-txt-color;
+  background-color: $our-works-title;
+}

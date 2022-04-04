@@ -1,6 +1,14 @@
-body{
-  background: #d00;
-  color: #000;
-  display:flex;
-  justify-content: center;
-}
+@import 'utils/variables';
+@import 'utils/visually-hidden';
+@import 'utils/placeholders';
+@import 'base/general';
+@import 'components/backdrop';
+@import 'components/header/header';
+@import 'components/hero';
+@import 'components/features';
+@import 'components/our-works';
+@import 'components/our-team';
+@import 'components/regular-customers';
+@import 'components/footer/footer';
+@import 'components/product/product';
+

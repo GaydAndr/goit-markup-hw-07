@@ -1,0 +1,16 @@
+.button {
+
+  color: $second-txt-color;
+  background-color: $accent-color;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-accent-color;
+  }
+}

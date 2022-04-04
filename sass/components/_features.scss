@@ -1,0 +1,35 @@
+.features {
+  padding-bottom: 0;
+}
+
+.features__list {
+  @extend %list;
+
+  display: flex;
+}
+
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
+  /* width: calc((100% - 90px) / 4 ); */
+
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+.features__icon {
+  padding: 25px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  background: $section-bg;
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $titlte-color;
+}
