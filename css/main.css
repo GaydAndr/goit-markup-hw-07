@@ -788,9 +788,8 @@ img {
 
 .subscribe__label {
   margin-right: 12px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .subscribe__label:focus-within .subscribe__input {
